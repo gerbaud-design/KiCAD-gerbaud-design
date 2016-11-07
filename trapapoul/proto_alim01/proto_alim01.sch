@@ -1,0 +1,306 @@
+EESchema Schematic File Version 2
+LIBS:gerbaud_design_industries
+LIBS:w_device
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:w_connectors
+LIBS:w_transistor
+LIBS:w_analog
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "lun. 30 mars 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 2200 1000 2    40   Input ~ 0
+V_bat
+$Comp
+L POT RP30
+U 1 1 57C050E5
+P 1100 1100
+F 0 "RP30" V 1150 1200 50  0000 C CNN
+F 1 "10k" V 1250 1200 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Triwood_RM-065" H 1100 1100 60  0001 C CNN
+F 3 "" H 1100 1100 60  0000 C CNN
+	1    1100 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR L300
+U 1 1 57C16940
+P 1800 750
+F 0 "L300" V 1750 750 40  0000 C CNN
+F 1 "INDUCTOR" V 1900 750 40  0000 C CNN
+F 2 "Inductors:SELF-WE-PD-XXL" H 1800 750 60  0001 C CNN
+F 3 "" H 1800 750 60  0000 C CNN
+	1    1800 750 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SCHOTTKY D300
+U 1 1 57C1927F
+P 1150 750
+F 0 "D300" H 1050 650 40  0000 C CNN
+F 1 "SCHOTTKY" H 1300 650 40  0000 C CNN
+F 2 "Diodes_SMD:MiniMELF_Handsoldering" H 1150 750 60  0001 C CNN
+F 3 "" H 1150 750 60  0000 C CNN
+	1    1150 750 
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 57C1B37F
+P 750 750
+F 0 "#PWR01" H 750 600 50  0001 C CNN
+F 1 "VCC" H 750 900 50  0000 C CNN
+F 2 "" H 750 750 50  0000 C CNN
+F 3 "" H 750 750 50  0000 C CNN
+	1    750  750 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C303
+U 1 1 57C1DE51
+P 2150 1100
+F 0 "C303" H 2300 1000 50  0000 L CNN
+F 1 "10uF" H 2250 1100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2150 1100 60  0001 C CNN
+F 3 "" H 2150 1100 60  0000 C CNN
+	1    2150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 57C1DFB0
+P 2150 1250
+F 0 "#PWR02" H 2150 1000 50  0001 C CNN
+F 1 "GND" H 2150 1100 50  0000 C CNN
+F 2 "" H 2150 1250 50  0000 C CNN
+F 3 "" H 2150 1250 50  0000 C CNN
+	1    2150 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C301
+U 1 1 57C1E910
+P 1000 850
+F 0 "C301" H 1150 750 50  0000 L CNN
+F 1 "10uF" H 1100 850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 1000 850 60  0001 C CNN
+F 3 "" H 1000 850 60  0000 C CNN
+	1    1000 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1000 2200 1000
+Wire Wire Line
+	2100 1000 2100 750 
+Wire Wire Line
+	2100 750  1950 750 
+Connection ~ 2100 1000
+Wire Wire Line
+	1200 750  1650 750 
+Wire Wire Line
+	1250 750  1250 900 
+Wire Wire Line
+	1250 900  1300 900 
+Connection ~ 1250 750 
+Wire Wire Line
+	750  750  1050 750 
+Connection ~ 2050 1000
+Wire Wire Line
+	2150 1000 2150 1050
+Connection ~ 2150 1000
+Wire Wire Line
+	2150 1250 2150 1200
+Wire Wire Line
+	1000 1000 1000 950 
+Wire Wire Line
+	850  1000 1300 1000
+Connection ~ 1100 1000
+Wire Wire Line
+	1200 1100 1300 1100
+Wire Wire Line
+	1100 1200 1100 1300
+Wire Wire Line
+	850  800  850  750 
+Connection ~ 850  750 
+Wire Wire Line
+	1000 800  1000 750 
+Connection ~ 1000 750 
+Wire Wire Line
+	850  950  850  1000
+Connection ~ 1000 1000
+Wire Notes Line
+	4250 5000 4250 6300
+Wire Notes Line
+	8750 450  8750 2850
+Text Notes -200 1400 0    600  ~ 120
+3
+$Comp
+L cap C302
+U 1 1 57C5507A
+P 850 900
+F 0 "C302" H 600 900 50  0000 L CNN
+F 1 "470uF" H 600 800 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D8_L11.5_P3.5" H 850 900 60  0001 C CNN
+F 3 "" H 850 900 60  0000 C CNN
+	1    850  900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 57C56CEB
+P 900 1100
+F 0 "#PWR03" H 900 850 50  0001 C CNN
+F 1 "GND" H 900 950 50  0000 C CNN
+F 2 "" H 900 1100 50  0000 C CNN
+F 3 "" H 900 1100 50  0000 C CNN
+	1    900  1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1100 900  1000
+Connection ~ 900  1000
+Wire Notes Line
+	3300 6300 3300 7800
+Wire Notes Line
+	450  6300 6300 6300
+$Comp
+L HEADER_1 J5
+U 1 1 57D1FA0E
+P 5350 3950
+F 0 "J5" H 5350 4100 60  0000 C CNN
+F 1 "HEADER_1" H 5350 3800 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 5350 3950 60  0001 C CNN
+F 3 "" H 5350 3950 60  0000 C CNN
+	1    5350 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_1 J6
+U 1 1 57D1FAB2
+P 5350 4350
+F 0 "J6" H 5350 4500 60  0000 C CNN
+F 1 "HEADER_1" H 5350 4200 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 5350 4350 60  0001 C CNN
+F 3 "" H 5350 4350 60  0000 C CNN
+	1    5350 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_1 J3
+U 1 1 57D2141E
+P 3950 4400
+F 0 "J3" H 3950 4550 60  0000 C CNN
+F 1 "HEADER_1" H 3950 4250 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 3950 4400 60  0001 C CNN
+F 3 "" H 3950 4400 60  0000 C CNN
+	1    3950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_1 J2
+U 1 1 57D2150C
+P 3900 4000
+F 0 "J2" H 3900 4150 60  0000 C CNN
+F 1 "HEADER_1" H 3900 3850 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 3900 4000 60  0001 C CNN
+F 3 "" H 3900 4000 60  0000 C CNN
+	1    3900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 57D21D2B
+P 5250 4350
+F 0 "#PWR04" H 5250 4100 50  0001 C CNN
+F 1 "GND" H 5250 4200 50  0000 C CNN
+F 2 "" H 5250 4350 50  0000 C CNN
+F 3 "" H 5250 4350 50  0000 C CNN
+	1    5250 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 57D2E115
+P 5250 3950
+F 0 "#PWR05" H 5250 3800 50  0001 C CNN
+F 1 "VCC" H 5250 4100 50  0000 C CNN
+F 2 "" H 5250 3950 50  0000 C CNN
+F 3 "" H 5250 3950 50  0000 C CNN
+	1    5250 3950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3800 4000 0    40   Input ~ 0
+V_bat
+$Comp
+L GND #PWR06
+U 1 1 57D3682B
+P 3850 4400
+F 0 "#PWR06" H 3850 4150 50  0001 C CNN
+F 1 "GND" H 3850 4250 50  0000 C CNN
+F 2 "" H 3850 4400 50  0000 C CNN
+F 3 "" H 3850 4400 50  0000 C CNN
+	1    3850 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 1100 2050 1100
+Wire Wire Line
+	2050 1100 2050 1000
+Wire Wire Line
+	1100 1300 800  1300
+Wire Wire Line
+	800  1300 800  750 
+Connection ~ 800  750 
+$Comp
+L MT3608 U300
+U 1 1 57BFA8DD
+P 1650 1000
+F 0 "U300" H 1650 1200 40  0000 C CNN
+F 1 "MT3608" H 1650 800 30  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 1650 1000 60  0001 C CNN
+F 3 "" H 1650 1000 60  0000 C CNN
+	1    1650 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 900  2100 900 
+Connection ~ 2100 900 
+$EndSCHEMATC

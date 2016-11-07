@@ -1,0 +1,116 @@
+
+(rules PCB proto_traparduiono_tag3-1
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 250)
+    (plane_via_costs 5)
+    (start_ripup_costs 20)
+    (start_pass_no 400)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.8)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 500.0)
+    (clear 250.2)
+    (clear 250.0 (type smd_to_turn_gap))
+    (clear 62.6 (type smd_smd))
+  )
+  (padstack "Via[0-1]_1500:400_um"
+    (shape
+      (circle F.Cu 1500.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1500.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_2000:400_um"
+    (shape
+      (circle F.Cu 2000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 2000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_1500:400_um" "Via[0-1]_1500:400_um" default
+  )
+  (via 
+    "Via[0-1]_2000:400_um" "Via[0-1]_2000:400_um" default
+  )
+  (via 
+    "Via[0-1]_1500:400_um-kicad_default" "Via[0-1]_1500:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_2000:400_um-kicad_default" "Via[0-1]_2000:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1500:400_um-power" "Via[0-1]_1500:400_um" power
+  )
+  (via 
+    "Via[0-1]_2000:400_um-power" "Via[0-1]_2000:400_um" power
+  )
+  (via_rule
+    default "Via[0-1]_1500:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_1500:400_um-kicad_default"
+  )
+  (via_rule
+    power "Via[0-1]_2000:400_um-power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(C201-Pad1)" "Net-(C202-Pad1)" BP1 BP2 BP3 "Net-(C503-Pad1)" quadA "M_bat"
+    "M_imot" "Net-(D300-Pad1)" "Net-(D310-Pad1)" "Net-(F721-Pad1)" "M_sol" SDA SCL alarm
+    quadB "C_bkw" "C_frw" buzz "mot_A" "mot_B" "Net-(J900-Pad3)" "Net-(J900-Pad4)"
+    "Net-(J900-Pad5)" "Net-(J900-Pad6)" "Net-(J900-Pad11)" "Net-(J900-Pad12)" "Net-(J900-Pad13)" "Net-(J900-Pad14)" "Net-(J900-Pad16)" "Net-(Q811-Pad1)"
+    "Net-(Q811-Pad2)" "Net-(Q812-Pad1)" "Net-(Q821-Pad1)" "Net-(Q822-Pad1)" "Net-(Q900-Pad1)" "Net-(R500-Pad2)" "Net-(R831-Pad2)" "Net-(R832-Pad2)"
+    "Net-(R833-Pad1)" "Net-(R901-Pad1)" "Net-(R902-Pad1)" "Net-(RP30-Pad2)" "Net-(RP31-Pad2)" "Net-(RP71-Pad2)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class power
+    GND "V_rtc" VCC "V_bat" +12V "V_sol" "V_ref"
+    (clearance_class power)
+    (via_rule power)
+    (rule
+      (width 700.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
