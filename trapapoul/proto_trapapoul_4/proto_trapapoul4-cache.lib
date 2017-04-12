@@ -78,14 +78,13 @@ X - 2 0 -150 100 U 0 0 1 1 w
 ENDDRAW
 ENDDEF
 #
-# C
+# C-RESCUE-proto_trapapoul4
 #
-DEF C C 0 10 N Y 1 F N
+DEF C-RESCUE-proto_trapapoul4 C 0 10 N Y 1 F N
 F0 "C" 50 10 50 H V L CNN
-F1 "C" 50 -60 50 H V L CNN
+F1 "C-RESCUE-proto_trapapoul4" 50 -60 50 H V L CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
-ALIAS cap_np
 DRAW
 P 3 0 1 0 -50 0 50 0 50 0 N
 P 3 0 1 0 50 -50 -50 -50 -50 -50 N
@@ -110,11 +109,11 @@ X 2 2 50 0 20 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# FUSE
+# FUSE-RESCUE-proto_trapapoul4
 #
-DEF FUSE F 0 10 Y Y 1 F N
+DEF FUSE-RESCUE-proto_trapapoul4 F 0 10 Y Y 1 F N
 F0 "F" 100 50 40 H V C CNN
-F1 "FUSE" -100 -50 40 H V C CNN
+F1 "FUSE-RESCUE-proto_trapapoul4" -100 -50 40 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -280,11 +279,11 @@ X C 3 50 100 50 D 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# PCF8574
+# PCF8574-RESCUE-proto_trapapoul4
 #
-DEF PCF8574 U 0 40 Y Y 1 F N
+DEF PCF8574-RESCUE-proto_trapapoul4 U 0 40 Y Y 1 F N
 F0 "U" 0 500 40 H V C CNN
-F1 "PCF8574" 0 -500 40 H V C CNN
+F1 "PCF8574-RESCUE-proto_trapapoul4" 0 -500 40 H V C CNN
 F2 "" 0 -100 60 H V C CNN
 F3 "" 0 -100 60 H V C CNN
 DRAW
@@ -326,11 +325,11 @@ X C 3 50 100 50 D 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# POT
+# POT-RESCUE-proto_trapapoul4
 #
-DEF POT R 0 40 Y N 1 F N
+DEF POT-RESCUE-proto_trapapoul4 R 0 40 Y N 1 F N
 F0 "R" 0 -50 50 H V C CNN
-F1 "POT" 0 -100 50 H V C CNN
+F1 "POT-RESCUE-proto_trapapoul4" 0 -100 50 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -342,11 +341,11 @@ X 3 3 100 0 50 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# R
+# R-RESCUE-proto_trapapoul4
 #
-DEF R R 0 0 N Y 1 F N
+DEF R-RESCUE-proto_trapapoul4 R 0 0 N Y 1 F N
 F0 "R" -50 50 50 V V C CNN
-F1 "R" 50 50 50 V V C CNN
+F1 "R-RESCUE-proto_trapapoul4" 50 50 50 V V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW

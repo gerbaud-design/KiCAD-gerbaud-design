@@ -1,7 +1,5 @@
 EESchema Schematic File Version 2
-LIBS:gerbaud_design_industries
-LIBS:w_connectors
-LIBS:w_device
+LIBS:proto_trapapoul4-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,8 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:w_transistor
-LIBS:w_analog
 LIBS:proto_trapapoul4-cache
 EELAYER 25 0
 EELAYER END
@@ -75,7 +71,7 @@ $EndComp
 Text GLabel 2300 3850 2    40   Input ~ 0
 V_bat
 $Comp
-L FUSE F721
+L FUSE-RESCUE-proto_trapapoul4 F721
 U 1 1 5739D602
 P 1600 3850
 F 0 "F721" H 1600 4050 40  0000 C CNN
@@ -97,7 +93,7 @@ F 3 "" H 750 4800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R722
+L R-RESCUE-proto_trapapoul4 R722
 U 1 1 5739DCC3
 P 2100 4000
 F 0 "R722" H 2200 4050 50  0000 C CNN
@@ -108,7 +104,7 @@ F 3 "" H 2100 4000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R602
+L R-RESCUE-proto_trapapoul4 R602
 U 1 1 5739DDCC
 P 5400 5350
 F 0 "R602" H 5550 5350 50  0000 C CNN
@@ -132,7 +128,7 @@ $EndComp
 Text GLabel 2300 4150 2    40   Input ~ 0
 M_bat
 $Comp
-L R R714
+L R-RESCUE-proto_trapapoul4 R714
 U 1 1 5739FC89
 P 3450 2050
 F 0 "R714" H 3600 1950 50  0000 C CNN
@@ -160,7 +156,7 @@ L NPN_BEC Q811
 U 1 1 573A547D
 P 9700 1800
 F 0 "Q811" H 9650 2050 50  0000 C CNN
-F 1 "PBSS4320" H 9550 1950 50  0000 C CNN
+F 1 "NPN" H 9800 1800 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 9700 1800 60  0001 C CNN
 F 3 "" H 9700 1800 60  0000 C CNN
 	1    9700 1800
@@ -171,7 +167,7 @@ L NPN_BEC Q821
 U 1 1 573A5F47
 P 10100 1800
 F 0 "Q821" H 10050 2050 50  0000 C CNN
-F 1 "PBSS4320" H 9950 1950 50  0000 C CNN
+F 1 "NPN" H 10200 1800 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 10100 1800 60  0001 C CNN
 F 3 "" H 10100 1800 60  0000 C CNN
 	1    10100 1800
@@ -182,14 +178,14 @@ L PNP_BEC Q812
 U 1 1 573A62B7
 P 9500 1100
 F 0 "Q812" H 9700 1150 50  0000 C CNN
-F 1 "PBSS5350" H 9750 1050 50  0000 C CNN
+F 1 "PNP" H 9750 1050 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 9500 1100 60  0001 C CNN
 F 3 "" H 9500 1100 60  0000 C CNN
 	1    9500 1100
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R812
+L R-RESCUE-proto_trapapoul4 R812
 U 1 1 573A6CCE
 P 9900 1100
 F 0 "R812" V 9850 1150 50  0000 C CNN
@@ -204,14 +200,14 @@ L PNP_BEC Q822
 U 1 1 573A8200
 P 10150 1000
 F 0 "Q822" H 10400 1050 50  0000 C CNN
-F 1 "PBSS5350" H 10450 950 50  0000 C CNN
+F 1 "PNP" H 10450 950 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 10150 1000 60  0001 C CNN
 F 3 "" H 10150 1000 60  0000 C CNN
 	1    10150 1000
 	1    0    0    1   
 $EndComp
 $Comp
-L R R822
+L R-RESCUE-proto_trapapoul4 R822
 U 1 1 573A820C
 P 9950 1000
 F 0 "R822" V 9900 1050 50  0000 C CNN
@@ -222,7 +218,7 @@ F 3 "" H 9950 1000 60  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L R R811
+L R-RESCUE-proto_trapapoul4 R811
 U 1 1 573A9BE0
 P 9400 1800
 F 0 "R811" V 9350 1850 50  0000 C CNN
@@ -233,7 +229,7 @@ F 3 "" H 9400 1800 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R821
+L R-RESCUE-proto_trapapoul4 R821
 U 1 1 573A9C8D
 P 10400 1800
 F 0 "R821" V 10350 1850 50  0000 C CNN
@@ -248,7 +244,7 @@ C_frw
 Text GLabel 10600 1800 2    40   Input ~ 0
 C_bkw
 $Comp
-L R R810
+L R-RESCUE-proto_trapapoul4 R810
 U 1 1 573AA186
 P 9550 2000
 F 0 "R810" H 9700 2000 50  0000 C CNN
@@ -259,7 +255,7 @@ F 3 "" H 9550 2000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R820
+L R-RESCUE-proto_trapapoul4 R820
 U 1 1 573AAAEB
 P 10250 2000
 F 0 "R820" H 10100 2000 50  0000 C CNN
@@ -270,7 +266,7 @@ F 3 "" H 10250 2000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R835
+L R-RESCUE-proto_trapapoul4 R835
 U 1 1 573AE41F
 P 9050 2650
 F 0 "R835" H 9200 2600 50  0000 C CNN
@@ -316,7 +312,7 @@ $EndComp
 Text GLabel 10800 2650 2    40   Input ~ 0
 M_imot
 $Comp
-L R R732
+L R-RESCUE-proto_trapapoul4 R732
 U 1 1 573B8E42
 P 1350 3250
 F 0 "R732" V 1250 3200 50  0000 C CNN
@@ -327,7 +323,7 @@ F 3 "" H 1350 3250 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R731
+L R-RESCUE-proto_trapapoul4 R731
 U 1 1 573B8F03
 P 1500 3100
 F 0 "R731" H 1400 3050 50  0000 C CNN
@@ -373,7 +369,7 @@ F 3 "" H 1100 6900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C202
+L C-RESCUE-proto_trapapoul4 C202
 U 1 1 573BFB1E
 P 850 6850
 F 0 "C202" H 600 6850 50  0000 L CNN
@@ -384,7 +380,7 @@ F 3 "" H 850 6850 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C201
+L C-RESCUE-proto_trapapoul4 C201
 U 1 1 573BFC1D
 P 850 6950
 F 0 "C201" H 950 6950 50  0000 L CNN
@@ -430,7 +426,7 @@ $EndComp
 Text GLabel 2350 6450 2    40   Input ~ 0
 V_rtc
 $Comp
-L R R201
+L R-RESCUE-proto_trapapoul4 R201
 U 1 1 573C47C9
 P 2450 6800
 F 0 "R201" V 2400 6850 50  0000 C CNN
@@ -447,7 +443,7 @@ SCL
 Text GLabel 3000 7150 2    40   Input ~ 0
 SDA
 $Comp
-L R R401
+L R-RESCUE-proto_trapapoul4 R401
 U 1 1 573C7FD0
 P 950 5450
 F 0 "R401" H 850 5600 50  0000 C CNN
@@ -458,7 +454,7 @@ F 3 "" H 950 5450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C401
+L C-RESCUE-proto_trapapoul4 C401
 U 1 1 573C838A
 P 950 5750
 F 0 "C401" V 1000 5500 50  0000 L CNN
@@ -471,7 +467,7 @@ $EndComp
 Text GLabel 850  5500 0    40   Input ~ 0
 BP1
 $Comp
-L R R612
+L R-RESCUE-proto_trapapoul4 R612
 U 1 1 573CFBFA
 P 5400 5800
 F 0 "R612" H 5250 5750 50  0000 C CNN
@@ -482,7 +478,7 @@ F 3 "" H 5400 5800 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R833
+L R-RESCUE-proto_trapapoul4 R833
 U 1 1 573D686E
 P 9250 2550
 F 0 "R833" V 9200 2600 50  0000 C CNN
@@ -493,7 +489,7 @@ F 3 "" H 9250 2550 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R834
+L R-RESCUE-proto_trapapoul4 R834
 U 1 1 573D69D5
 P 9250 2750
 F 0 "R834" V 9350 2800 50  0000 C CNN
@@ -504,7 +500,7 @@ F 3 "" H 9250 2750 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R832
+L R-RESCUE-proto_trapapoul4 R832
 U 1 1 573D6F98
 P 9700 2950
 F 0 "R832" V 9850 3000 50  0000 C CNN
@@ -515,7 +511,7 @@ F 3 "" H 9700 2950 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R831
+L R-RESCUE-proto_trapapoul4 R831
 U 1 1 573D7627
 P 10400 2650
 F 0 "R831" V 10350 2700 50  0000 C CNN
@@ -526,7 +522,7 @@ F 3 "" H 10400 2650 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C831
+L C-RESCUE-proto_trapapoul4 C831
 U 1 1 573D7F39
 P 10650 2850
 F 0 "C831" H 10700 2860 50  0000 L CNN
@@ -548,7 +544,7 @@ F 3 "" H 10650 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C602
+L C-RESCUE-proto_trapapoul4 C602
 U 1 1 573DA418
 P 5500 5500
 F 0 "C602" H 5550 5510 50  0000 L CNN
@@ -559,7 +555,7 @@ F 3 "" H 5500 5500 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R721
+L R-RESCUE-proto_trapapoul4 R721
 U 1 1 573DBB74
 P 2100 4300
 F 0 "R721" V 2200 4300 50  0000 C CNN
@@ -594,7 +590,7 @@ $EndComp
 Text GLabel 1300 7050 0    40   Input ~ 0
 alarm
 $Comp
-L C C203
+L C-RESCUE-proto_trapapoul4 C203
 U 1 1 573E00FC
 P 2100 6600
 F 0 "C203" H 2150 6610 50  0000 L CNN
@@ -616,7 +612,7 @@ F 3 "" H 2100 6500 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C830
+L C-RESCUE-proto_trapapoul4 C830
 U 1 1 575B09E0
 P 10700 2200
 F 0 "C830" H 10750 2210 50  0000 L CNN
@@ -653,7 +649,7 @@ $EndComp
 Text GLabel 3600 800  0    40   Input ~ 0
 V_sol
 $Comp
-L C C732
+L C-RESCUE-proto_trapapoul4 C732
 U 1 1 57C08080
 P 1550 2850
 F 0 "C732" H 1400 2800 50  0000 L CNN
@@ -664,7 +660,7 @@ F 3 "" H 1550 2850 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C501
+L C-RESCUE-proto_trapapoul4 C501
 U 1 1 57C0AF26
 P 3800 850
 F 0 "C501" H 3800 1100 50  0000 L CNN
@@ -697,7 +693,7 @@ F 3 "" H 4350 1250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C503
+L C-RESCUE-proto_trapapoul4 C503
 U 1 1 57C110DB
 P 4700 1050
 F 0 "C503" H 4550 800 50  0000 L CNN
@@ -708,7 +704,7 @@ F 3 "" H 4700 1050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C504
+L C-RESCUE-proto_trapapoul4 C504
 U 1 1 57C12788
 P 5100 900
 F 0 "C504" H 5150 900 50  0000 L CNN
@@ -754,7 +750,7 @@ F 3 "" H 1800 4150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L POT RP90
+L POT-RESCUE-proto_trapapoul4 RP90
 U 1 1 57C526FF
 P 5200 2800
 F 0 "RP90" H 5100 2850 50  0000 C CNN
@@ -809,7 +805,7 @@ F 3 "" H 5050 2800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PCF8574 U900
+L PCF8574-RESCUE-proto_trapapoul4 U900
 U 1 1 57C5A66B
 P 4150 3750
 F 0 "U900" H 4150 4250 40  0000 C CNN
@@ -850,14 +846,14 @@ L NPN_BEC Q900
 U 1 1 57C69899
 P 3450 4400
 F 0 "Q900" V 3400 4550 50  0000 C CNN
-F 1 "PBSS4320" V 3400 4100 50  0000 C CNN
+F 1 "NPN" V 3400 4100 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 3450 4400 60  0001 C CNN
 F 3 "" H 3450 4400 60  0000 C CNN
 	1    3450 4400
 	0    1    1    0   
 $EndComp
 $Comp
-L R R902
+L R-RESCUE-proto_trapapoul4 R902
 U 1 1 57C6BDA5
 P 3450 4150
 F 0 "R902" H 3550 4200 50  0000 C CNN
@@ -923,7 +919,7 @@ F 3 "" H 950 5300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R402
+L R-RESCUE-proto_trapapoul4 R402
 U 1 1 57C1BF18
 P 1550 5450
 F 0 "R402" H 1450 5600 50  0000 C CNN
@@ -934,7 +930,7 @@ F 3 "" H 1550 5450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C402
+L C-RESCUE-proto_trapapoul4 C402
 U 1 1 57C1BF1E
 P 1550 5750
 F 0 "C402" V 1600 5500 50  0000 L CNN
@@ -980,7 +976,7 @@ F 3 "" H 1550 5300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R403
+L R-RESCUE-proto_trapapoul4 R403
 U 1 1 57C1C061
 P 2200 5450
 F 0 "R403" H 2100 5600 50  0000 C CNN
@@ -991,7 +987,7 @@ F 3 "" H 2200 5450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C403
+L C-RESCUE-proto_trapapoul4 C403
 U 1 1 57C1C067
 P 2200 5750
 F 0 "C403" V 2250 5500 50  0000 L CNN
@@ -1037,7 +1033,7 @@ F 3 "" H 2200 5300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C900
+L C-RESCUE-proto_trapapoul4 C900
 U 1 1 57C44513
 P 4150 4850
 F 0 "C900" H 4300 4750 50  0000 L CNN
@@ -1081,7 +1077,7 @@ F 3 "" H 1550 800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C514
+L C-RESCUE-proto_trapapoul4 C514
 U 1 1 57EDDFB1
 P 1050 750
 F 0 "C514" H 1000 250 50  0000 L CNN
@@ -1103,7 +1099,7 @@ F 3 "" H 1050 900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R510
+L R-RESCUE-proto_trapapoul4 R510
 U 1 1 57EDDFBD
 P 1150 800
 F 0 "R510" H 1200 550 50  0000 C CNN
@@ -1125,7 +1121,7 @@ F 3 "" H 1550 1100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C512
+L C-RESCUE-proto_trapapoul4 C512
 U 1 1 57EDDFD5
 P 2200 800
 F 0 "C512" H 2200 1100 50  0000 L CNN
@@ -1215,7 +1211,7 @@ F 3 "" H 5600 2200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C531
+L C-RESCUE-proto_trapapoul4 C531
 U 1 1 57F006A5
 P 5400 2200
 F 0 "C531" H 5400 2500 50  0000 L CNN
@@ -1304,7 +1300,7 @@ F 3 "" H 2500 1700 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C513
+L C-RESCUE-proto_trapapoul4 C513
 U 1 1 57EDDFCF
 P 1900 950
 F 0 "C513" H 1750 700 50  0000 L CNN
@@ -1328,7 +1324,7 @@ F 3 "" H 2450 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C722
+L C-RESCUE-proto_trapapoul4 C722
 U 1 1 57C26AB3
 P 1800 4000
 F 0 "C722" H 1700 3900 50  0000 L CNN
@@ -1387,7 +1383,7 @@ F 3 "" H 4800 5950 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C612
+L C-RESCUE-proto_trapapoul4 C612
 U 1 1 573DA9B6
 P 5550 5950
 F 0 "C612" H 5600 5960 50  0000 L CNN
@@ -1675,7 +1671,7 @@ F 3 "" H 950 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R711
+L R-RESCUE-proto_trapapoul4 R711
 U 1 1 57F4780E
 P 4450 2400
 F 0 "R711" H 4300 2300 50  0000 C CNN
@@ -1686,7 +1682,7 @@ F 3 "" H 4450 2400 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R712
+L R-RESCUE-proto_trapapoul4 R712
 U 1 1 57F47966
 P 3750 2400
 F 0 "R712" H 3600 2300 50  0000 C CNN
@@ -1732,7 +1728,7 @@ F 3 "" H 2400 950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R204
+L R-RESCUE-proto_trapapoul4 R204
 U 1 1 57C74D49
 P 2850 6800
 F 0 "R204" V 2800 6850 50  0000 C CNN
@@ -1743,7 +1739,7 @@ F 3 "" H 2850 6800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R203
+L R-RESCUE-proto_trapapoul4 R203
 U 1 1 57C73D8C
 P 2650 6800
 F 0 "R203" V 2600 6850 50  0000 C CNN
@@ -1755,7 +1751,7 @@ F 3 "" H 2650 6800 60  0000 C CNN
 $EndComp
 NoConn ~ 4500 3700
 $Comp
-L C C542
+L C-RESCUE-proto_trapapoul4 C542
 U 1 1 57F688A8
 P 3750 6750
 F 0 "C542" H 3800 6760 50  0000 L CNN
@@ -1790,7 +1786,7 @@ $EndComp
 Text Notes 3500 7700 0    200  ~ 0
 54
 $Comp
-L R R511
+L R-RESCUE-proto_trapapoul4 R511
 U 1 1 58070DD5
 P 2050 1150
 F 0 "R511" H 2150 1100 50  0000 C CNN
@@ -1801,7 +1797,7 @@ F 3 "" H 2050 1150 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R512
+L R-RESCUE-proto_trapapoul4 R512
 U 1 1 580730F6
 P 2050 850
 F 0 "R512" H 2150 800 50  0000 C CNN
@@ -1812,7 +1808,7 @@ F 3 "" H 2050 850 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R500
+L R-RESCUE-proto_trapapoul4 R500
 U 1 1 57C0CA41
 P 3950 1150
 F 0 "R500" H 4000 900 50  0000 C CNN
@@ -1847,7 +1843,7 @@ $EndComp
 Text Notes 3300 7400 0    60   ~ 0
 connecteur 4 points I2C
 $Comp
-L C C521
+L C-RESCUE-proto_trapapoul4 C521
 U 1 1 57F6986D
 P 2450 1850
 F 0 "C521" H 2450 2150 50  0000 L CNN
@@ -1858,7 +1854,7 @@ F 3 "" H 2450 1850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C523
+L C-RESCUE-proto_trapapoul4 C523
 U 1 1 57F6984F
 P 750 1800
 F 0 "C523" H 750 1950 50  0000 L CNN
@@ -2426,7 +2422,7 @@ Connection ~ 1150 2100
 Wire Wire Line
 	1150 2100 1100 2100
 $Comp
-L R R520
+L R-RESCUE-proto_trapapoul4 R520
 U 1 1 57F6985B
 P 1000 2100
 F 0 "R520" H 1100 2050 50  0000 C CNN
@@ -2440,7 +2436,7 @@ Connection ~ 1150 2050
 Wire Wire Line
 	1150 2000 1150 2150
 $Comp
-L C C522
+L C-RESCUE-proto_trapapoul4 C522
 U 1 1 57F6989F
 P 1500 1950
 F 0 "C522" H 1450 1700 50  0000 L CNN
@@ -2518,7 +2514,7 @@ F 3 "" H 7200 3700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C102
+L C-RESCUE-proto_trapapoul4 C102
 U 1 1 5814EA32
 P 7050 3950
 F 0 "C102" H 7100 3960 50  0000 L CNN
@@ -2529,7 +2525,7 @@ F 3 "" H 7050 3950 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C101
+L C-RESCUE-proto_trapapoul4 C101
 U 1 1 5814EB80
 P 7050 4050
 F 0 "C101" H 7100 4060 50  0000 L CNN
@@ -2618,7 +2614,7 @@ F 3 "" H 9250 4450 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C104
+L C-RESCUE-proto_trapapoul4 C104
 U 1 1 581654A8
 P 9450 4400
 F 0 "C104" H 9200 4400 50  0000 L CNN
@@ -2629,7 +2625,7 @@ F 3 "" H 9450 4400 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C105
+L C-RESCUE-proto_trapapoul4 C105
 U 1 1 58166B34
 P 9450 4500
 F 0 "C105" H 9200 4500 50  0000 L CNN
@@ -2733,7 +2729,7 @@ Wire Wire Line
 	4950 800  4950 900 
 Connection ~ 4950 800 
 $Comp
-L R R526
+L R-RESCUE-proto_trapapoul4 R526
 U 1 1 582A9A0E
 P 1750 1950
 F 0 "R526" H 1850 1900 50  0000 C CNN
@@ -2744,7 +2740,7 @@ F 3 "" H 1750 1950 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R525
+L R-RESCUE-proto_trapapoul4 R525
 U 1 1 582A9BA9
 P 1950 1850
 F 0 "R525" H 2050 1800 50  0000 C CNN
@@ -2888,7 +2884,7 @@ F 3 "" H 9900 1300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C902
+L C-RESCUE-proto_trapapoul4 C902
 U 1 1 58396E73
 P 5300 3050
 F 0 "C902" H 5300 3350 50  0000 L CNN
@@ -2913,7 +2909,7 @@ $EndComp
 Wire Wire Line
 	5400 3050 5350 3050
 $Comp
-L C C901
+L C-RESCUE-proto_trapapoul4 C901
 U 1 1 58398DC6
 P 5300 2950
 F 0 "C901" H 5300 3250 50  0000 L CNN
@@ -3100,7 +3096,7 @@ Connection ~ 1300 3000
 Text Notes 600  6250 0    60   ~ 0
 tau=10K*100NF=1ms
 $Comp
-L C C106
+L C-RESCUE-proto_trapapoul4 C106
 U 1 1 588CE497
 P 7100 4650
 F 0 "C106" H 7150 4660 50  0000 L CNN
@@ -3131,7 +3127,7 @@ Wire Wire Line
 	7250 4500 7250 4400
 Connection ~ 7250 4400
 $Comp
-L R R713
+L R-RESCUE-proto_trapapoul4 R713
 U 1 1 588D4489
 P 4100 2400
 F 0 "R713" H 3950 2300 50  0000 C CNN
@@ -3142,7 +3138,7 @@ F 3 "" H 4100 2400 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C107
+L C-RESCUE-proto_trapapoul4 C107
 U 1 1 588E023C
 P 6750 5250
 F 0 "C107" H 6800 5260 50  0000 L CNN
@@ -3153,7 +3149,7 @@ F 3 "" H 6750 5250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C108
+L C-RESCUE-proto_trapapoul4 C108
 U 1 1 588E03C2
 P 7200 5350
 F 0 "C108" H 7250 5360 50  0000 L CNN
@@ -3164,7 +3160,7 @@ F 3 "" H 7200 5350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C109
+L C-RESCUE-proto_trapapoul4 C109
 U 1 1 588E054D
 P 9600 4750
 F 0 "C109" H 9650 4760 50  0000 L CNN
@@ -3252,7 +3248,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 1200 4700 1150
 $Comp
-L R R502
+L R-RESCUE-proto_trapapoul4 R502
 U 1 1 588B9878
 P 4950 1000
 F 0 "R502" H 5000 750 50  0000 C CNN
@@ -3263,7 +3259,7 @@ F 3 "" H 4950 1000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R501
+L R-RESCUE-proto_trapapoul4 R501
 U 1 1 588B9A19
 P 4950 1300
 F 0 "R501" H 5000 1050 50  0000 C CNN
@@ -3286,7 +3282,7 @@ Wire Wire Line
 	4950 1100 4950 1200
 Connection ~ 4950 1150
 $Comp
-L R R513
+L R-RESCUE-proto_trapapoul4 R513
 U 1 1 588BD574
 P 1850 1250
 F 0 "R513" H 1950 1200 50  0000 C CNN
